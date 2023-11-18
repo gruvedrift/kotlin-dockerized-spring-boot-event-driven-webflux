@@ -1,4 +1,4 @@
-# Dockerized Spring Boot Kotlin Multi-Module project with webflux and eventlisteners
+# Dockerized Spring Boot Kotlin Multi-Module project with webflux and event listeners
 
 Super.simple demonstration of a Maven multi-module Kotlin project. It consists of two applications, Ping and Pong, communicating with each other via RESTful APIs. The applications are Dockerized for easy deployment.
 Both applications share network namespace with the host machine. 

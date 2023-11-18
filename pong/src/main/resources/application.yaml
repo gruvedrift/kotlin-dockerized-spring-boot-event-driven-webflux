@@ -1,0 +1,7 @@
+# Server port for Pong
+server:
+  port: 2323
+
+external-config:
+  transmission-port: 6868
+  transmission-url: "http://localhost:6868/api/message/"

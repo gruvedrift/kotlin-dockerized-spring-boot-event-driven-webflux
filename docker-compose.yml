@@ -1,0 +1,20 @@
+version: '3.7'
+services:
+  pong:
+    container_name: pong-application
+    build:
+      context: pong
+      dockerfile: Dockerfile
+#    ports:
+#      - "9451:2323"
+    network_mode: "host"
+  ping:
+    depends_on:
+      - pong
+    container_name: ping-application
+    build:
+      context: ping
+      dockerfile: Dockerfile
+#    ports:
+#      - "9450:6868"
+    network_mode: "host"
